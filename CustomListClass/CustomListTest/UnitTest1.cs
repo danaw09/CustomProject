@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CustomListClass;
-using System.Collections.Generic;
+
 
 namespace CustomListTest
 {
@@ -13,7 +13,7 @@ namespace CustomListTest
         {
             // arrange
             CustomList<string> customList = new CustomList<string>();
-            string inputValue = "String 1";
+            string inputValue = "1";
 
             // act
             customList.Add(inputValue);
@@ -22,5 +22,22 @@ namespace CustomListTest
             Assert.AreSame(customList[0], inputValue);
 
         }
+
+        public void Custom_List_Adds_String_Checks_Count_For_One()
+        {
+            // arrange
+            CustomList<string> customList = new CustomList<string>();
+            string inputValue = " 1";
+            int expectedCount = 1;
+
+            // act
+            customList.Add(inputValue);
+            int actualCount = customList.Count;
+
+            // assert
+            Assert.AreEqual(expectedCount, actualCount);
+
+        }
     }
+
 }
