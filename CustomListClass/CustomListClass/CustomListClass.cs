@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomProject
+namespace CustomListClass
 {
-    class Program
+    class CustomListClass
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

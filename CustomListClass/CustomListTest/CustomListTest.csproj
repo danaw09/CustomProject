@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{416E5B23-59E6-4DE7-A169-F41E31765D7C}</ProjectGuid>
+    <ProjectGuid>{330C18B8-925E-4E0F-A9D6-2D61EF692238}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomProjectTest</RootNamespace>
-    <AssemblyName>CustomProjectTest</AssemblyName>
+    <RootNamespace>CustomListTest</RootNamespace>
+    <AssemblyName>CustomListTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
