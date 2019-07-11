@@ -10,25 +10,54 @@ namespace CustomListTest
     {
         [TestMethod]
 
-        public void Removes_And_Updates_Count()
+        public void Add_Two_classes_For_Six_Values()
         {
             // arrange
-            CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5, 6 };
-            customList.Count = 6;
-            int inputValue = 7;
-            int expected = 5;
-            int actual;
+            CustomList<string> customList = new CustomList<string>();
+
+            string inputValue1 = "String 1";
+            string inputValue2 = "String 2";
+            string inputValue3 = "String 3";
+            string inputValue4 = "String 4";
+            string inputValue5 = "String 5";
+            string inputValue6 = "String 6";
+            int expected = "String 6";
             // act
-            customList.Remove(inputValue);
-            int actual = customList.Count;
+            customList.Add(inputValue1);
+            customList.Add(inputValue2);
+            customList.Add(inputValue3);
+            customList.Add(inputValue4);
+            customList.Add(inputValue5);
+            customList.Add(inputValue6);
+            int actual = customList[5];
+
 
             // assert
             Assert.AreEqual(expected, actual);
 
 
+        }
 
+
+
+        public void Add_Three_Strings()
+        {
+            CustomList<int> customlist = new CustomList<int>();
+            string inputValue = "string 1";
+            string inputValue = "string 2";
+            string inputValue = "string 3";
+            
+            //act
+            customList.Add(inputValue1);
+            customList.Add(inputValue2);
+            customList.Add(inputValue3);
+            int actual = customList.Count;
+            //assert
+            Assert.AreEqual(expected, actual);
 
         }
+
+
 
         public void Adds_String_Checks_For_Three()
         {
@@ -77,10 +106,10 @@ namespace CustomListTest
 
             // assert
             Assert.AreEqual(expected, actual);
-
-    }   }
-
+ }  }    }
 
 
 
-}
+
+
+
