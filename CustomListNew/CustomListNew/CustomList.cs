@@ -8,5 +8,9 @@ namespace CustomListNew
 {
     class CustomList
     {
+        public void Add()
+        {
+
+        }
     }
 }
